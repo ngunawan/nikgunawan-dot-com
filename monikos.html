@@ -1,0 +1,132 @@
+<!DOCTYPE html5>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Junior Web Developer - Nik Gunawan">
+    <link rel="shortcut icon" type="image/png" href="images/hi-favicon.png" />
+    <title>Nik Gunawan | Junior Web Developer</title>
+
+    <meta property="og:url" content="http://nikgunawan.com">
+    <meta property="og:title" content="Nik Gunawan | Junior Web Developer">
+    <meta property="og:description" content="I am a junior web developer with a focus in front-end development. With my passion for design and development, I strive to create beautiful and highly functional products. I recently graduated from UNC-Chapel Hill and am currently looking for work in web development.">
+    <meta property="og:image" content="http://nikgunawan.com/images/hi-og-image.jpg">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.min.css">
+</head>
+
+<body style="display:none;">
+
+    <nav class="navbar">
+        <a href="./home.html"><img class="navbar__logo" src="images/hi-logo-whiteblack.png"></a>
+
+        <div class="black-overlay"></div>
+
+        <div class="navbar__link-wrapper">
+            <a class='navbar__link' href="./home.html#work">work</a>
+            <a class='navbar__link' href="./home.html#about">about</a>
+            <a class='navbar__link anchorlink' href="#contact">contact</a>
+        </div>
+        
+        <a class="navbar__hamburger" href="#"><img src="images/hamburger.png"></a>
+    </nav>
+
+    <article class="case">
+        <h2 class="case__heading">overview</h2>
+        <p class="case__overview">Monikos is a webview mobile app for Android and iOS built for pharmacy students to help memorize the overwhelming drug facts they have to remember in pharmacy school. This was an Agile team project for a teacher supervised Software Engineering Lab where I worked together with three other students and a client.</p>
+        <div class="case__whatidid">
+            <h3>What I did:</h3>
+            <ul>
+                <li>Collaborated with client to determine app functionalities and structure</li>
+                <li>Created a "drugs database" section with drugs information retrieved from a MySQL database using AngularJS, PHP, and SQL</li>
+                <li>Developed like/dislike and suggestion functionality for mnemonic hints using angular's $http service and PHP</li>
+                <li>Created popup menu to hold local user information throughout the app using cookies</li>
+                <li>Created a list manager to create personalized custom drugs list</li>
+                <li>Pulled stored "university lists" into user's local collection using PHP and SQL</li>
+                <li>Communicated with teammates and client through Slack and weekly meetings</li>
+            </ul>
+        </div>
+
+        <a href="http://monikos.web.unc.edu/" target="_blank">
+            <div class="btn btn--regular">view documentation</div>
+        </a>
+        <a href="https://github.com/chenchik/monikos
+" target="_blank">
+            <div class="btn btn--regular">view repository</div>
+        </a>
+
+        <h2 class="case__heading">in-depth look</h2>
+
+        <p class="case__commmentary">To simplify operations, we divided the app into 2 main functions:<br /> 1. View quick information on specific drugs through a drugs "database" section<br /> 2. "Study" from your school and personal lists of drugs with games</p>
+
+        <a href="images/monikos-login.png">
+            <img class="case__phone-img" src="images/monikos-login.png">
+        </a>
+        <a href="images/monikos-home.png">
+            <img class="case__phone-img" src="images/monikos-home.png">
+        </a>
+
+        <p class="case__commmentary">We retrieved drug information from our MySQL database through an HTTP GET request and loaded the list of JSON encapsuled drug information using ngRepeat. Using AngularJS' filter module we could search through the drugs.</p>
+
+        <img class="case__phone-img" src="images/monikos-database.png">
+        <img class="case__phone-img" src="images/monikos-search.png">
+
+        <p class="case__commmentary">Monikos established itself apart from other pharmaceutical study aid apps by its database of mnemonic hints for each drug. HTTP POST requests allow for liking and disliking hints. You can also send in suggestions through a PHP form that is sent through e-mail for manual filtering.</p>
+
+        <a href="images/monikos-hint.png">
+            <img class="case__phone-img" src="images/monikos-hint.png">
+        </a>
+        <a href="images/monikos-suggest.png">
+            <img class="case__phone-img" src="images/monikos-suggest.png">
+        </a>
+
+        <p class="case__commentary">When a user registers they were asked to affiliate themselves with a university. Each university has a collection of ready-to-use lists. You can also make your own custom drugs list from the database. Checklist-Model allowed us to easily create list objects. Using the lists you can play games to earn "capsules" and wager your "capsules" with your friends. </p>
+
+        <a href="images/monikos-list.png">
+            <img class="case__phone-img" src="images/monikos-list.png">
+        </a>
+        <a href="images/monikos-listofgames.png">
+            <img class="case__phone-img" src="images/monikos-listofgames.png">
+        </a>
+        <a href="images/monikos-flashcards.png">
+            <img class="case__phone-img" src="images/monikos-flashcards.png">
+        </a>
+        <a href="images/monikos-matching.png">
+            <img class="case__phone-img" src="images/monikos-matching.png">
+        </a>
+        <a href="images/monikos-pillgame.png">
+            <img class="case__phone-img" src="images/monikos-pillgame.png">
+        </a>
+
+
+    </article>
+
+    <footer id="contact" class="contact">
+        <div class="contact__email">E-mail: ngunawan@alumni.unc.edu</div>
+
+        <a class="contact__resume" target="_blank" href="resume.pdf">
+            <div class="btn btn--regular-inverse">view resume</div>
+        </a>
+
+        <div class="contact__external-links">
+            <div class="contact__external-link">
+                <img src="images/github-logo.png">
+                <a target="_blank" href="https://github.com/ngunawan">view github</a>
+            </div>
+            <div class="contact__external-link">
+                <img src="images/linkedin-logo.png">
+                <a target="_blank" href="https://www.linkedin.com/in/nik-gunawan/">view linkedin</a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="scripts/index.js"></script>
+
+
+</body>
+
+</html>

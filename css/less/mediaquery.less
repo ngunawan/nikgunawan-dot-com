@@ -1,0 +1,73 @@
+@media only screen and (max-width: 800px) {
+    
+    html {
+        font-size: 56.25%;
+    }
+
+    .navbar {
+        .navbar__hamburger {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .navbar__link {
+            display: none;
+        }
+    }
+
+    .slides {
+
+        .slide {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+            text-align: center;
+
+            .flipblock-inactive {
+                margin-bottom: 4rem;
+            }
+
+            .slide__image {
+                width: 80vw;
+            }
+            .slide__description {
+                width: 80vw;
+            }
+            .slide__info-wrapper {
+                padding-left: 0;
+            }
+        }
+    }
+
+    .about {
+        padding: 10vw;
+        .about__skills {
+            display: none;
+        }
+    }
+    
+    .case {
+        padding: 5vw 7vw;
+        
+        .case__browser-img {
+            width: 80vw;
+        }
+        
+        .case__phone-img {
+            width: 40vw;
+        }
+    }
+    
+    .gallery {
+        .gallery__thumbnail {
+            width: 40vw;
+            height: 40vw;
+        }
+        .gallery__preview {
+            max-width: 90vw;
+            max-height: 90vh;
+        }
+    }
+}
