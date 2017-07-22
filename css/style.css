@@ -623,6 +623,8 @@ a {
   font-size: 18px;
   font-size: 1.8rem;
   margin: 0;
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 .case .case__heading {
   font-weight: 700;
@@ -644,6 +646,9 @@ a {
 }
 .case .case__whatidid ul {
   text-align: left;
+}
+.case .case__font {
+  line-height: 1.0;
 }
 .case .case__colors span {
   display: inline-block;

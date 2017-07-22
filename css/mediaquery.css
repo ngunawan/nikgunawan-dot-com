@@ -46,6 +46,9 @@
   .about {
     padding: 10vw;
   }
+  .about .about__wrapper {
+    width: 80vw;
+  }
   .about .about__skills {
     display: none;
   }
