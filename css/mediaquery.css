@@ -2,7 +2,8 @@
   html {
     font-size: 56.25%;
   }
-  .navbar .navbar__hamburger {
+  .navbar .navbar__hamburger,
+  .navbar input[type="checkbox"] {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

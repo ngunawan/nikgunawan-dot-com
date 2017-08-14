@@ -1,8 +1,36 @@
 $(document).ready(function () {
+
+    let browser_name = navigator.appName,
+        browser_version = navigator.appVersion;
+    
+    if(browser_name == "Microsoft Internet Explorer") {
+        //don't include javascript in page
+        return;
+    }
+    
+    console.log("Browser name: " + browser_name);
+    console.log("Browser version: " + browser_version);
+    
+    
+    
     
     const floor = 60; //sets from bottom of screen where ball bounces
-    
-    console.log(floor);
+
+    for (let i = 1; i <= 5; i++) {
+        let ballWrapper = document.createElement("div"),
+            ball = document.createElement("div"),
+            shadow = document.createElement("div"),
+            container = document.getElementById("greeting-container");
+
+        ballWrapper.className = "ball-wrapper";
+        ball.className += "ball";
+        ball.className += " ball" + i;
+        shadow.className = "shadow";
+
+        ballWrapper.appendChild(ball);
+        ballWrapper.appendChild(shadow);
+        container.appendChild(ballWrapper);
+    }
 
     var Ball = function (jump_height, jump_time, diameter) {
         this.jump_time = jump_time;
@@ -115,15 +143,20 @@ $(document).ready(function () {
 
 
     // enter animation --------------------------
+    
+    //remove link when there's javascript
+    $('.header .btn a').removeAttr("href");
 
     $('.header .btn').on('click', function () {
 
         //change button color
         $(this).css({
             'background': '#000',
-            'color': '#FFF',
             'border': '4px solid #000'
         });
+        $(this).children('a').css({
+            'color': '#FFF'
+        })
 
         //stop animations
         $('.ball-wrapper').stop(true);
