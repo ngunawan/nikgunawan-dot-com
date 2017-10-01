@@ -756,6 +756,10 @@ a {
 .b-lazy.b-loaded {
   opacity: 1;
 }
+.warning-msg {
+  font-weight: 700;
+  color: crimson;
+}
 .gallery {
   display: -webkit-box;
   display: -ms-flexbox;
