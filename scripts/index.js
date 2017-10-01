@@ -13,7 +13,7 @@
                  // Add hash (#) to URL when done scrolling (default click behavior)
                  window.location.hash = hash;
              });
-         } 
+         }
      });
 
      //flipblock animations -----------------------
@@ -24,53 +24,45 @@
      });
 
      //navbar hamburger toggles --------------------
-//     function toggleBurgerMenu() {
-//         $('.navbar__hamburger').toggleClass('clicked');
-//         $('.navbar').toggleClass('navburger');
-//
-//         if ($('.navbar').hasClass('navburger')) {
-//             //add event handlers to links when hamburger menu is open
-//             $('.navbar__link').on('click', toggleBurgerMenu);
-//             $('.navbar__link-wrapper').on('click', toggleBurgerMenu);
-//         } else {
-//             //remove handlers when closing hamburger menu
-//             $('.navbar__link').off('click', toggleBurgerMenu);
-//             $('.navbar__link-wrapper').off('click', toggleBurgerMenu);
-//         }
-//     }
-//     $('.navbar__hamburger').on('click', toggleBurgerMenu);
+     //     function toggleBurgerMenu() {
+     //         $('.navbar__hamburger').toggleClass('clicked');
+     //         $('.navbar').toggleClass('navburger');
+     //
+     //         if ($('.navbar').hasClass('navburger')) {
+     //             //add event handlers to links when hamburger menu is open
+     //             $('.navbar__link').on('click', toggleBurgerMenu);
+     //             $('.navbar__link-wrapper').on('click', toggleBurgerMenu);
+     //         } else {
+     //             //remove handlers when closing hamburger menu
+     //             $('.navbar__link').off('click', toggleBurgerMenu);
+     //             $('.navbar__link-wrapper').off('click', toggleBurgerMenu);
+     //         }
+     //     }
+     //     $('.navbar__hamburger').on('click', toggleBurgerMenu);
 
      //gallery controls ----------------------------
-     $('.gallery__thumbnail').on('click', function() {
-         let img_url = "images/" + $(this).attr('data-img-url');
+     var bLazy = new Blazy({
+         // Options
+     });
+
+     $('.gallery__thumbnail').on('click', function () {
+         let img_url = $(this).attr('data-preview-url');
+         console.log(img_url);
          $('.gallery').children('.black-overlay').css({
              'opacity': '1',
              'z-index': '9000'
          });
          $('.gallery__preview').attr('src', img_url);
      });
-     
+
      function closePreview() {
-          $('.gallery').children('.black-overlay').css({
+         $('.gallery').children('.black-overlay').css({
              'opacity': '0',
              'z-index': '-9000'
          });
          $('.gallery__preview').attr('src', "");
      }
-     
+
      $('.gallery').children('.black-overlay').on('click', closePreview);
 
  });
-
-
-
-
-
-
-
-
-
-
-
-
-

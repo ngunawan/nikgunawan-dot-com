@@ -2,15 +2,24 @@
 <html>
 
 <head>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107295209-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments)
+        };
+        gtag('js', new Date());
+
+        gtag('config', 'UA-107295209-1');
+
+    </script>
+
     <meta charset=utf-8 />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Junior Web Developer - Nik Gunawan">
-    <title>Nik Gunawan | Junior Web Developer</title>
-
-    <meta property="og:url" content="http://nikgunawan.com">
-    <meta property="og:title" content="Nik Gunawan | Junior Web Developer">
-    <meta property="og:description" content="I am a junior web developer with a focus in front-end development. With my passion for design and development, I strive to create beautiful and highly functional products. I recently graduated from UNC-Chapel Hill and am currently looking for work in web development.">
-    <meta property="og:image" content="http://nikgunawan.com/images/hi-og-image.jpg">
+    <meta name="description" content="I am jr. developer specializing in front-end development.">
+    <title>Portfolio | Nik Gunawan - Jr. Dev</title>
 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/main.min.css">
@@ -30,6 +39,7 @@
             <a class='navbar__link' href="./home.html#work">work</a>
             <a class='navbar__link' href="./home.html#about">about</a>
             <a class='navbar__link anchorlink' href="#contact">contact</a>
+            <a class='navbar__link anchorlink' href="./blog">blog</a>
         </div>
 
         <a class="navbar__hamburger" href="#"><img src="images/hamburger.png"></a>
@@ -41,12 +51,12 @@
         <div class="case__whatidid">
             <h3>What I did:</h3>
             <ul>
-                <li>Created site from scratch using HTML/CSS and JQuery</li>
-                <li>Transformed Photoshop mockups designed by UX designer to a functioning website</li>
-                <li>Used JQuery's mouse events to create an interactive video gallery</li>
-                <li>Used magnific-popup.js to add in-site viewable popup youtube videos</li>
-                <li>Used PHP to create a contact form</li>
-                <li>Designed site to be responsive on any size device up to 1920x1080</li>
+                <li>Created site from scratch using HTML, CSS and JQuery.</li>
+                <li>Translated Photoshop mockups designed by UX designer to a functioning website.</li>
+                <li>Used JQuery's mouse events to create an interactive video gallery.</li>
+                <li>Used magnific-popup.js to add popup youtube videos without leaving the site.</li>
+                <li>Used PHP to create a contact form.</li>
+                <li>Designed site to be responsive on any size device up to 1920x1080.</li>
             </ul>
         </div>
 
@@ -80,7 +90,7 @@
 
     </article>
 
-   <footer id="contact" class="contact">
+    <footer id="contact" class="contact">
         <div class="contact__email">E-mail: ngunawan@alumni.unc.edu</div>
 
         <a class="contact__resume" target="_blank" href="resume.pdf">

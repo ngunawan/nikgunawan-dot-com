@@ -2,18 +2,28 @@
 <html>
 
 <head>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107295209-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments)
+        };
+        gtag('js', new Date());
+
+        gtag('config', 'UA-107295209-1');
+
+    </script>
+
     <meta charset=utf-8 />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Junior Web Developer - Nik Gunawan">
-    <title>Nik Gunawan | Junior Web Developer</title>
-
-    <meta property="og:url" content="http://nikgunawan.com">
-    <meta property="og:title" content="Nik Gunawan | Junior Web Developer">
-    <meta property="og:description" content="I am a junior web developer with a focus in front-end development. With my passion for design and development, I strive to create beautiful and highly functional products. I recently graduated from UNC-Chapel Hill and am currently looking for work in web development.">
-    <meta property="og:image" content="http://nikgunawan.com/images/hi-og-image.jpg">
+    <meta name="description" content="I am jr. developer specializing in front-end development.">
+    <title>Portfolio | Nik Gunawan - Jr. Dev</title>
 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/main.min.css">
+
 </head>
 
 <body class="fade-in">
@@ -30,6 +40,7 @@
             <a class='navbar__link' href="./home.html#work">work</a>
             <a class='navbar__link' href="./home.html#about">about</a>
             <a class='navbar__link anchorlink' href="#contact">contact</a>
+            <a class='navbar__link anchorlink' href="./blog">blog</a>
         </div>
 
         <a class="navbar__hamburger" href="#"><img src="images/hamburger.png"></a>
@@ -47,27 +58,43 @@
             <div class="black-overlay">
                 <img src="" class="gallery__preview">
             </div>
-
-            <div data-img-url="design-beer.jpg" style="background: url(images/design-beer.jpg);background-size: cover;" class="gallery__thumbnail"></div>
-            <div data-img-url="design-braatens.jpg" style="background: url(images/design-braatens.jpg);background-size: cover;" class="gallery__thumbnail"></div>
-            <div data-img-url="design-cafe.jpg" style="background: url(images/design-cafe.jpg);background-size: cover;" class="gallery__thumbnail"></div>
-            <div data-img-url="design-firehouse.jpg" style="background: url(images/design-firehouse.jpg);background-size: cover;" class="gallery__thumbnail"></div>
-            <div data-img-url="design-gears.jpg" style="background: url(images/design-gears.jpg);background-size: cover;" class="gallery__thumbnail"></div>
-            <div data-img-url="design-go4.jpg" style="background: url(images/design-go4.jpg);background-size: cover;" class="gallery__thumbnail"></div>
-            <div data-img-url="design-honda.jpg" style="background: url(images/design-honda.jpg);background-size: cover;" class="gallery__thumbnail"></div>
-            <div data-img-url="design-hotel.jpg" style="background: url(images/design-hotel.jpg);background-size: cover;" class="gallery__thumbnail"></div>
-            <div data-img-url="design-lacabana.jpg" style="background: url(images/design-lacabana.jpg);background-size: cover;" class="gallery__thumbnail"></div>
-            <div data-img-url="design-letterbox.jpg" style="background: url(images/design-letterbox.jpg);background-size: cover;" class="gallery__thumbnail"></div>
-            <div data-img-url="design-marco.jpg" style="background: url(images/design-marco.jpg);background-size: cover;" class="gallery__thumbnail"></div>
-            <div data-img-url="design-pitapit.jpg" style="background: url(images/design-pitapit.jpg);background-size: cover;" class="gallery__thumbnail"></div>
-            <div data-img-url="design-sams.jpg" style="background: url(images/design-sams.jpg);background-size: cover;" class="gallery__thumbnail"></div>
-            <div data-img-url="design-vapor.jpg" style="background: url(images/design-vapor.jpg);background-size: cover;" class="gallery__thumbnail"></div>
-            <div data-img-url="design-window.jpg" style="background: url(images/design-window.jpg);background-size: cover;" class="gallery__thumbnail"></div>
+            <div data-src="images/design-beer.jpg" data-preview-url="images/design-beer.jpg" class="gallery__thumbnail b-lazy"></div>
+            <div data-src="images/design-braatens.jpg" data-preview-url="images/design-braatens.jpg" class="gallery__thumbnail b-lazy"></div>
+            <div data-src="images/design-cafe.jpg" data-preview-url="images/design-cafe.jpg" class="gallery__thumbnail b-lazy"></div>
+            <div data-src="images/design-firehouse.jpg" data-preview-url="images/design-firehouse.jpg" class="gallery__thumbnail b-lazy"></div>
+            <div data-src="images/design-gears.jpg" data-preview-url="images/design-gears.jpg" class="gallery__thumbnail b-lazy"></div>
+            <div data-src="images/design-go4.jpg" data-preview-url="images/design-go4.jpg" class="gallery__thumbnail b-lazy"></div>
+            <div data-src="images/design-honda.jpg" data-preview-url="images/design-honda.jpg" class="gallery__thumbnail b-lazy"></div>
+            <div data-src="images/design-hotel.jpg" data-preview-url="images/design-hotel.jpg" class="gallery__thumbnail b-lazy"></div>
+            <div data-src="images/design-lacabana.jpg" data-preview-url="images/design-lacabana.jpg" class="gallery__thumbnail b-lazy"></div>
+            <div data-src="images/design-letterbox.jpg" data-preview-url="images/design-letterbox.jpg" class="gallery__thumbnail b-lazy"></div>
+            <div data-src="images/design-marco.jpg" data-preview-url="images/design-marco.jpg" class="gallery__thumbnail b-lazy"></div>
+            <div data-src="images/design-pitapit.jpg" data-preview-url="images/design-pitapit.jpg" class="gallery__thumbnail b-lazy"></div>
+            <div data-src="images/design-sams.jpg" data-preview-url="images/design-sams.jpg" class="gallery__thumbnail b-lazy"></div>
+            <div data-src="images/design-vapor.jpg" data-preview-url="images/design-vapor.jpg" class="gallery__thumbnail b-lazy"></div>
+            <div data-src="images/design-window.jpg" data-preview-url="images/design-window.jpg" class="gallery__thumbnail b-lazy"></div>
+            <noscript>
+                <div style="background: url(images/design-beer.jpg);background-size: cover;" class="gallery__thumbnail b-lazy"></div>
+                <div style="background: url(images/design-braatens.jpg);background-size: cover;" class="gallery__thumbnail b-lazy"></div>
+                <div style="background: url(images/design-cafe.jpg);background-size: cover;" class="gallery__thumbnail b-lazy"></div>
+                <div style="background: url(images/design-firehouse.jpg);background-size: cover;" class="gallery__thumbnail b-lazy"></div>
+                <div style="background: url(images/design-gears.jpg);background-size: cover;" class="gallery__thumbnail b-lazy"></div>
+                <div style="background: url(images/design-go4.jpg);background-size: cover;" class="gallery__thumbnail b-lazy"></div>
+                <div style="background: url(images/design-honda.jpg);background-size: cover;" class="gallery__thumbnail b-lazy"></div>
+                <div style="background: url(images/design-hotel.jpg);background-size: cover;" class="gallery__thumbnail b-lazy"></div>
+                <div style="background: url(images/design-lacabana.jpg);background-size: cover;" class="gallery__thumbnail b-lazy"></div>
+                <div style="background: url(images/design-letterbox.jpg);background-size: cover;" class="gallery__thumbnail b-lazy"></div>
+                <div style="background: url(images/design-marco.jpg);background-size: cover;" class="gallery__thumbnail b-lazy"></div>
+                <div style="background: url(images/design-pitapit.jpg);background-size: cover;" class="gallery__thumbnail b-lazy"></div>
+                <div style="background: url(images/design-sams.jpg);background-size: cover;" class="gallery__thumbnail b-lazy"></div>
+                <div style="background: url(images/design-vapor.jpg);background-size: cover;" class="gallery__thumbnail b-lazy"></div>
+                <div style="background: url(images/design-window.jpg);background-size: cover;" class="gallery__thumbnail b-lazy"></div>
+            </noscript>
         </div>
 
     </article>
 
-  <footer id="contact" class="contact">
+    <footer id="contact" class="contact">
         <div class="contact__email">E-mail: ngunawan@alumni.unc.edu</div>
 
         <a class="contact__resume" target="_blank" href="resume.pdf">
@@ -88,8 +115,9 @@
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src="scripts/index.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/blazy/latest/blazy.min.js"></script>
+    <script src="scripts/index.js"></script>
 </body>
 
 </html>

@@ -2,10 +2,24 @@
 <html>
 
 <head>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107295209-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments)
+        };
+        gtag('js', new Date());
+
+        gtag('config', 'UA-107295209-1');
+
+    </script>
+
     <meta charset=utf-8 />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Junior Web Developer - Nik Gunawan">
-    <title>Nik Gunawan | Junior Web Developer</title>
+    <meta name="description" content="I am jr. developer specializing in front-end development.">
+    <title>Portfolio | Nik Gunawan - Jr. Dev</title>
 
     <meta property="og:url" content="http://nikgunawan.com">
     <meta property="og:title" content="Nik Gunawan | Junior Web Developer">
@@ -30,6 +44,7 @@
             <a class='navbar__link' href="./home.html#work">work</a>
             <a class='navbar__link' href="./home.html#about">about</a>
             <a class='navbar__link anchorlink' href="#contact">contact</a>
+            <a class='navbar__link anchorlink' href="./blog">blog</a>
         </div>
 
         <a class="navbar__hamburger" href="#"><img src="images/hamburger.png"></a>
@@ -41,18 +56,18 @@
         <div class="case__whatidid">
             <h3>What I did:</h3>
             <ul>
-                <li>Designed mockups of user interface in Photoshop</li>
-                <li>Used spacing and minimalism to make a readable and approachable design.</li>
-                <li>Transfered functionalities from a clickable prototype to a new AngularJS single page application</li>
-                <li>Developed front end components including login/register module, dashboard, and community circle</li>
-                <li>Worked with back end intern to connect front end and back end functionalities</li>
-                <li>Created landing page for platform</li>
+                <li>Designed UI mockups in Photoshop.</li>
+                <li>Used minimalistic design to create an approachable UI.</li>
+                <li>Completely redesigned a Bootstrap prototype to an AngularJS SPA.</li>
+                <li>Developed various UI components including login/register module, dashboard, and community circle.</li>
+                <li>Worked with back-end intern to connect front-end and back-end functionalities.</li>
+                <li>Created landing page to promotoe platform.</li>
             </ul>
         </div>
         <div class="case__font-color grid-column-2">
             <h3>font</h3>
             <div style="font-size: 3.5rem; font-family:'Open Sans'" class="case__font">Open Sans</div>
-            
+
             <h3>color scheme</h3>
             <div class="case__colors">
                 <span style="background: #46b0c6"></span>
@@ -87,7 +102,7 @@
     </article>
 
 
-   <footer id="contact" class="contact">
+    <footer id="contact" class="contact">
         <div class="contact__email">E-mail: ngunawan@alumni.unc.edu</div>
 
         <a class="contact__resume" target="_blank" href="resume.pdf">

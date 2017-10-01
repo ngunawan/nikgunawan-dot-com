@@ -160,6 +160,7 @@
              font-weight: 300;
              color: @color-secondary;
              display: block;
+             line-height: 1.2;
              margin-bottom: 2rem;
          }
 
@@ -655,6 +656,15 @@
  }
  /* gallery ------------------------ */
 
+ .b-lazy {
+     transition: 500ms;
+     opacity: 0;
+ }
+
+ .b-lazy.b-loaded {
+     opacity: 1;
+ }
+
  .gallery {
      display: flex;
      flex-wrap: wrap;
@@ -669,6 +679,7 @@
          justify-content: center;
          cursor: pointer;
          position: relative;
+         background-size: cover;
 
          &:after {
              content: 'Click to View';

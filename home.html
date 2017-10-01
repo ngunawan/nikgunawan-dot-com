@@ -2,15 +2,24 @@
 <html>
 
 <head>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107295209-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments)
+        };
+        gtag('js', new Date());
+
+        gtag('config', 'UA-107295209-1');
+
+    </script>
+
     <meta charset=utf-8 />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Junior Web Developer - Nik Gunawan">
-    <title>Nik Gunawan | Junior Web Developer</title>
-
-    <meta property="og:url" content="http://nikgunawan.com">
-    <meta property="og:title" content="Nik Gunawan | Junior Web Developer">
-    <meta property="og:description" content="I am a junior web developer with a focus in front-end development. With my passion for design and development, I strive to create beautiful and highly functional products. I recently graduated from UNC-Chapel Hill and am currently looking for work in web development.">
-    <meta property="og:image" content="http://nikgunawan.com/images/hi-og-image.jpg">
+    <meta name="description" content="I am jr. developer specializing in front-end development.">
+    <title>Portfolio | Nik Gunawan - Jr. Dev</title>
 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/main.min.css">
@@ -20,7 +29,7 @@
     <nav class="navbar">
         <!-- to register click for hamburger menu -->
         <input type="checkbox">
-        
+
         <a href="./home.html"><img class="navbar__logo" aria-label="Home" alt="Logo" src="images/hi-logo-whiteblack.png"></a>
 
         <div class="black-overlay"></div>
@@ -29,6 +38,7 @@
             <a class='navbar__link anchorlink' href="#work">work</a>
             <a class='navbar__link anchorlink' href="#about">about</a>
             <a class='navbar__link anchorlink' href="#contact">contact</a>
+            <a class='navbar__link anchorlink' href="./blog">blog</a>
         </div>
 
         <a class="navbar__hamburger" href="#"><img src="images/hamburger.png"></a>
@@ -41,7 +51,7 @@
                 <img class="slide__image flipblock--front" src="images/macbook-hindsight.png" alt="Hindsight Investments Project Preview">
                 <div class="slide__description flipblock--back">
                     <p>
-                        Designed and developed user interface of a stock portfolio management web app using <strong>AngularJS</strong>.
+                        Designed and developed user interface for a stock portfolio management web platform using <strong>AngularJS</strong>.
                     </p>
                 </div>
             </div>
@@ -92,7 +102,7 @@
                 <img class="slide__image flipblock--front" src="images/macbook-raven.png" alt="Raven Nicole Project Preview">
                 <div class="slide__description flipblock--back">
                     <p>
-                        Created a responsive and interactive site for an industrial dancer using <strong>JQuery</strong>, <strong>HTML/CSS</strong>, and <strong>PHP</strong>.
+                        Created a responsive and interactive site for an industrial dancer using <strong>JQuery</strong>, <strong>HTML</strong>, <strong>CSS</strong>, and <strong>PHP</strong>.
                     </p>
                 </div>
             </div>
@@ -117,13 +127,13 @@
                 <img class="slide__image flipblock--front" src="images/macbook-portfolio.png" alt="My Portfolio Project Preview">
                 <div class="slide__description flipblock--back">
                     <p>
-                        Created this portfolio using modern best practices, <strong>JQuery</strong>, <strong>JavaScript</strong>, and <strong>HTML/CSS</strong>.
+                        Created this portfolio using modern best practices, <strong>JavaScript</strong>, <strong>HTML</strong>, and <strong>CSS</strong>.
                     </p>
                 </div>
             </div>
             <div class="slide__info-wrapper">
                 <label class="slide__label">Personal</label>
-                <h2 class="slide__title">My  Portfolio</h2>
+                <h2 class="slide__title">My Portfolio</h2>
                 <div class="flipblock">
                     <a href="myportfolio.html">
                         <div class="btn btn--regular flipblock--front">
@@ -169,16 +179,21 @@
         <div class="about__wrapper">
             <h2 class="about__title">About Me</h2>
             <div class="about__description">
-                <p>I am a junior web developer with a focus in front-end development. With my passion for development and design, I strive to create beautiful and highly functional products. I recently graduated from UNC-Chapel Hill and am currently looking for work in web development.</p>
-                <p>Outside of code and graphics, I am also a dancer/choreographer.</p>
+                <p>I am a creative, driven, and passionate jr developer specializing in front-end development. I recently graduated from UNC-Chapel Hill and am currently looking for full-time opportunities. Check out my resume or feel free to shoot me an e-mail.</p>
+                <p>Outside of code and design, I am also a dancer/choreographer!</p>
             </div>
             <div class="about__skills">
-                <span>angularjs/jquery/js</span>
-                <span>html/css</span>
-                <span>mean stack</span>
-                <span>php/sql</span>
+                <span>angularjs</span>
+                <span>javascript</span>
+                <span>jquery</span>
+                <span>html</span>
+                <span>css</span>
+                <span>nodejs</span>
+                <span>php</span>
+                <span>sql</span>
                 <span>java</span>
                 <span>photoshop</span>
+                <span>and more</span>
             </div>
         </div>
     </section>

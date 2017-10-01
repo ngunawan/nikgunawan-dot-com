@@ -168,6 +168,7 @@ a {
   font-weight: 300;
   color: #FFFFFF;
   display: block;
+  line-height: 1.2;
   margin-bottom: 20px;
   margin-bottom: 2rem;
 }
@@ -747,6 +748,14 @@ a {
   font-size: 125%;
 }
 /* gallery ------------------------ */
+.b-lazy {
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  opacity: 0;
+}
+.b-lazy.b-loaded {
+  opacity: 1;
+}
 .gallery {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -770,6 +779,7 @@ a {
           justify-content: center;
   cursor: pointer;
   position: relative;
+  background-size: cover;
 }
 .gallery .gallery__thumbnail:after {
   content: 'Click to View';
